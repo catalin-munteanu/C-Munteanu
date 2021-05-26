@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/*
+esto creo que lo había visto en algún foro como
+parte de la solución para hacer que el footer se quede en su lugar*/
+
+html{
+    height: 100%;
+}
+
+/*Fuentes*/
+
+@font-face {
+    font-family: 'FuturaBDCN';
+    src: url("../C-Munteanu/fonts/FuturaBoldCondensedBT.ttf");
+  }
+
+@font-face {
+    font-family: 'FuturaMDCN';
+    src: url("../C-Munteanu/fonts/FuturaMediumCondensedBT.ttf");
+  }
+
+@font-face {
+    font-family: 'FuturaLTCN';
+    src: url("../C-Munteanu/fonts/FuturaLightCondensedBT.ttf");
+}
+
+@font-face {
+    font-family: 'Dekar';
+    src: url("../C-Munteanu/fonts/Dekar.otf");
+  }
+
+/*estilos para el título del main*/
+
+h1{
+    font-family: 'FuturaBDCN', 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+/*estilos para los títulos de las otras páginas*/
+
+/*@keyframes animacionTitulos{
+    0%   {background-color: #2d0866; left:0px; top:0px;}
+    50%  {background-color:#ff8da8; left:200px; top:0px;}
+    100% {background-color:#2d0866; left:0px; top:0px;}
+  }*/
+
+h2{
+    font-family: 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    margin: 20px;
+    padding: 10px 40px 10px 10px;
+    left:0%;
+    /*animation-name: animacionTitulos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;*/
+}
+
+/*body*/
+body{
+    position: relative;
+    height: 100%;
+}
+
+/*imágenes de fondo*/
+
+body#bodyInicio{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_inicio_2.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyMusica{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_musica.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyVideos{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_videos.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyParticipaciones{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_participaciones.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyVivo{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_vivo.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyBio{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_bio.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+body#bodyContacto{
+    height: 100%;
+    background: url("../C-Munteanu/img/fondo_contacto.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+/*Flexbox listas (footer y nav)*/
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*Estilos footer*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em;
+    padding: 1em;
+    height: 5%;
+    background-color: rgba(0,0,0,0.40);
+}
+
+#iconoSpotify,
+#iconoYoutube,
+#iconoBandcamp,
+#iconoInstagram{
+    margin: 1em;
+    padding: 1em;
+}
+
+/*Estilos nav*/
+
+nav{
+    position: relative;
+    top: 0;
+    font-family: 'FuturaMDCN', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /*margin: 2vh 2vw;
+    padding: 2vh 2vw;*/
+    height: 5%;
+    background-color: rgba(0,0,0,0.40);
+}
+
+nav ul li{
+    margin: 1em;
+    padding: 1em;
+    color: white;
+}
+
+/*Estilos links*/
+
+a:link{
+    color:#ff8da8;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#ff8da8;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#ff8da8;
+    text-decoration: underline;
+}
+
+a:active{
+    color:#ff8da8;
+    text-decoration: underline;
+}
+
+/*Estilos sección "Discos"*/
+
+.discos{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Estilos texto sección "Bio"*/
+
+p{
+    font-family: 'Dekar', 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 0.25em;
+    padding: 0.25em;
+    text-align: center;
+    overflow: auto;
+}
+
+/*Otras cosas*/
+
+section#videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+#participaciones1,
+#participaciones2{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article#textoCompletoBio{
+    margin: 2vh 15vw;
+    padding: 2vh 2vw;
+    background-color: rgba(0,0,0,0.40);
+}
+
+/*
+#bio{
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #d9ff00, 0 0 2px #d9ff00, 0 0 10px #d9ff00, 0 0 6px #d9ff00, 0 0 20px #d9ff00, 0 0 20px #d9ff00;
+}*/
