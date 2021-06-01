@@ -1,3 +1,5 @@
+/*Reset*/
+
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +10,7 @@
     outline: none;
 }
 
-/*
-esto creo que lo había visto en algún foro como
+/*Algo que había visto en algún foro como
 parte de la solución para hacer que el footer se quede en su lugar*/
 
 html{
@@ -38,7 +39,7 @@ html{
     src: url("../C-Munteanu/fonts/Dekar.otf");
   }
 
-/*estilos para el título del main*/
+/*Estilos index*/
 
 h1{
     font-family: 'FuturaBDCN', 'Open Sans Condensed', sans-serif;
@@ -49,7 +50,7 @@ h1{
     padding: 20px;
 }
 
-/*estilos para los títulos de las otras páginas*/
+/*Estilos de todas las páginas*/
 
 /*@keyframes animacionTitulos{
     0%   {background-color: #2d0866; left:0px; top:0px;}
@@ -70,10 +71,10 @@ h2{
     animation-iteration-count: infinite;*/
 }
 
-/*body*/
 body{
     position: relative;
     height: 100%;
+    min-height: 100vh;
 }
 
 /*imágenes de fondo*/
@@ -121,6 +122,7 @@ body#bodyContacto{
 }
 
 /*Flexbox listas (footer y nav)*/
+
 ul{
     display: flex;
     flex-direction: row;
@@ -138,8 +140,8 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 1em;
-    padding: 1em;
+    margin: 1em 0 1em 0;
+    padding: 1em 0 1em 0;
     height: 5%;
     background-color: rgba(0,0,0,0.40);
 }
@@ -189,15 +191,15 @@ a:visited{
 
 a:hover{
     color:#ff8da8;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 a:active{
     color:#ff8da8;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
-/*Estilos sección "Discos"*/
+/*Sección "Discos"*/
 
 .discos{
     height: 70vh;
@@ -207,26 +209,119 @@ a:active{
     align-items: center;
 }
 
-/*Estilos texto sección "Bio"*/
+/*Sección "Bio"*/
+
+h2#tituloBio{
+    text-align: left;
+    width: 50%;
+}
+
+/*para poner un "espejo" del titulo
+    transform: rotateY(180deg);*/
 
 p{
     font-family: 'Dekar', 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
     font-size: 18px;
     color: white;
-    margin: 0.25em;
+    margin: 0.5em;
     padding: 0.25em;
     text-align: center;
     overflow: auto;
 }
 
-/*Otras cosas*/
+article#textoBioUno{
+    position: absolute;
+    width: 50%;
+    left: 0;
+}
 
-section#videos{
+article#textoBioDos{
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+
+p#circuloUno{
+    width: 57%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+p#circuloUnoYMedio{
+    width: 38%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+p#circuloDos{
+    width: 29%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+p#circuloTres{
+    padding-left: 28%;
+    padding-right: 3%;
+    text-align: right;
+}
+
+p#circuloCuatro{
+    padding-left: 25%;
+    padding-right: 3%;
+    text-align: right;
+}
+
+p#circuloCinco{
+    padding-left: 32%;
+    padding-right: 3%;
+    text-align: right;
+}
+
+p#circuloSeis{
+    padding-left: 32%;
+    padding-right: 3%;
+    text-align: right; 
+}
+
+/*article#textoCompletoBio{
+    margin: 2vh 15vw;
+    padding: 2vh 2vw;
+    background-color: rgba(0,0,0,0.40);
+}*/
+
+/*
+#bio{
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #d9ff00, 0 0 2px #d9ff00, 0 0 10px #d9ff00, 0 0 6px #d9ff00, 0 0 20px #d9ff00, 0 0 20px #d9ff00;
+}*/
+
+/*Sección "Videos"*/
+
+/*section#videos{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     overflow: auto;
+}*/
+
+article#videoDestacado{
+    margin: 2vh;
+    padding: 2vh;
+    text-align: center;
 }
+
+article.videosNoDestacados{
+    margin: 2vh;
+    padding: 2vh;
+    text-align: center;
+}
+
+iframe.otrosVideos{
+    margin: 2vh;
+    padding: 2vh;
+}
+
+/*Sección "Participaciones"*/
 
 #participaciones1,
 #participaciones2{
@@ -237,14 +332,20 @@ section#videos{
     align-items: center;
 }
 
-article#textoCompletoBio{
-    margin: 2vh 15vw;
-    padding: 2vh 2vw;
-    background-color: rgba(0,0,0,0.40);
+/*Sección Contacto*/
+
+#botonContacto:hover{
+    box-shadow: 0 12px 16px 0 rgba(44,54,133,0.24),0 17px 30px 0 rgba(44,54,133,0.19);
+    cursor: pointer;
 }
 
-/*
-#bio{
-    color: #FFFFFF;
-    text-shadow: 0 0 8px #d9ff00, 0 0 2px #d9ff00, 0 0 10px #d9ff00, 0 0 6px #d9ff00, 0 0 20px #d9ff00, 0 0 20px #d9ff00;
-}*/
+main{
+    position: relative;
+}
+
+form{
+    text-align: center;
+    font-family: 'Dekar', 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: white;
+}
