@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa4853c74e.js" crossorigin="anonymous"></script>
     <title>Videos | Catalín Munteanu</title>
 </head>
+
 <body id="bodyVideos">
+
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href=index.html>INICIO</a></li>
-                <li><a href=musica.html>MÚSICA</a></li>
-                <li><a href=videos.html>VIDEOS</a></li>
-                <li><a href=participaciones.html>PARTICIPACIONES</a></li>
-                <li><a href=vivo.html>VIVO</a></li>
-                <li><a href=bio.html>BIO</a></li>
-                <li><a href=contacto.html>CONTACTO</a></li>
-                </a></li>
+            <ul id="mainMenu">
+                <li class="menuItems">
+                    <a href=index.html>INICIO</a>
+                </li>
+                <li class="menuItems">
+                    <a href=musica.html>MÚSICA</a>
+                </li>
+                <li class="menuItems">
+                    <a href=videos.html>VIDEOS</a>
+                </li>
+                <li class="menuItems">
+                    <a href=participaciones.html>PARTICIPACIONES</a>
+                </li>
+                <li class="menuItems">
+                    <a href=vivo.html>VIVO</a>
+                </li>
+                <li class="menuItems">
+                    <a href=bio.html>BIO</a>
+                </li>
+                <li class="menuItems">
+                    <a href=contacto.html>CONTACTO</a>
+                </li>
             </ul>
         </nav>
     </header>
+
     <main>
-    <h2>VIDEOS</h2>
-    <section id="videos">
-        <article id="videoDestacado">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-        <article class="videosNoDestacados">
-            <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-            <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/7_1poysP21U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/IU3B35eAGW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
-    </section>
+
+        <h2>VIDEOS</h2>
+
+        <section id="videos">
+
+            <article id="videoDestacado">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+
+            <article class="videosNoDestacados">
+                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/kzuCR0aFkew"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/7_1poysP21U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe class="otrosVideos" width="360" height="315" src="https://www.youtube.com/embed/IU3B35eAGW4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+        
+        <!-- Puedo meter más contenido del canal de Youtube... ver cómo hacer para poner "más" y que me mande a todo
+        el contenido del canal o algo así -->
+
+        </section>
     </main>
+
     <footer>
-        <ul>
-        <li>
-        <a href="https://open.spotify.com/artist/3Bo4iMIQ1fapJEYcvBb42S" target="_blank">
+        <a class="iconosFooter" href="https://open.spotify.com/artist/3Bo4iMIQ1fapJEYcvBb42S" target="_blank">
             <i class="fab fa-spotify fa-1.5x" id="iconoSpotify"></i>
         </a>
-        </li>
-        <li>
-        <a href="https://www.youtube.com/c/CatalinMunteanuMusica" target="_blank">
+        <a class="iconosFooter" href="https://www.youtube.com/c/CatalinMunteanuMusica" target="_blank">
             <i class="fab fa-youtube fa-1.5x" id="iconoYoutube"></i>
         </a>
-        </li>
-        <li>
-        <a href="https://catalinmunteanu.bandcamp.com/" target="_blank">
+        <a class="iconosFooter" href="https://catalinmunteanu.bandcamp.com/" target="_blank">
             <i class="fab fa-bandcamp fa-1.5x" id="iconoBandcamp"></i>
         </a>
-        </li>
-        <li>
-        <a href="https://instagram.com/catalinmunteanu_" target="_blank">
-        <i class="fab fa-instagram fa-1.5x" id="iconoInstagram"></i>
+        <a class="iconosFooter" href="https://instagram.com/catalinmunteanu_" target="_blank">
+            <i class="fab fa-instagram fa-1.5x" id="iconoInstagram"></i>
         </a>
-        </li>
-        </ul>
     </footer>
+
 </body>
+
 </html>

@@ -42,7 +42,7 @@ html{
 /*Estilos index*/
 
 h1{
-    font-family: 'FuturaBDCN', 'Open Sans Condensed', sans-serif;
+    font-family: 'FuturaBDCN', 'Arial', sans-serif;
     font-size: 60px;
     color: white;
     text-align: center;
@@ -52,14 +52,8 @@ h1{
 
 /*Estilos de todas las páginas*/
 
-/*@keyframes animacionTitulos{
-    0%   {background-color: #2d0866; left:0px; top:0px;}
-    50%  {background-color:#ff8da8; left:200px; top:0px;}
-    100% {background-color:#2d0866; left:0px; top:0px;}
-  }*/
-
 h2{
-    font-family: 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
+    font-family: 'FuturaLTCN', 'Arial', sans-serif;
     font-size: 30px;
     color: white;
     text-align: right;
@@ -77,7 +71,7 @@ body{
     min-height: 100vh;
 }
 
-/*imágenes de fondo*/
+/*Imágenes de fondo*/
 
 body#bodyInicio{
     height: 100%;
@@ -121,14 +115,6 @@ body#bodyContacto{
     background-size: cover;
 }
 
-/*Flexbox listas (footer y nav)*/
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 /*Estilos footer*/
 
 footer{
@@ -138,23 +124,27 @@ footer{
     right: 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 1em 0 1em 0;
+    margin: 1em 0 0 0;
     padding: 1em 0 1em 0;
     height: 5%;
     background-color: rgba(0,0,0,0.40);
 }
 
-#iconoSpotify,
-#iconoYoutube,
-#iconoBandcamp,
-#iconoInstagram{
-    margin: 1em;
-    padding: 1em;
+.iconosFooter{
+    margin: 10px;
+    padding: 10px;
 }
 
 /*Estilos nav*/
+
+/*header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
 
 nav{
     position: relative;
@@ -169,6 +159,12 @@ nav{
     padding: 2vh 2vw;*/
     height: 5%;
     background-color: rgba(0,0,0,0.40);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 nav ul li{
@@ -209,6 +205,15 @@ a:active{
     align-items: center;
 }
 
+/*Sección "Index"*/
+
+#mainIndex{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Sección "Bio"*/
 
 h2#tituloBio{
@@ -220,8 +225,9 @@ h2#tituloBio{
     transform: rotateY(180deg);*/
 
 p{
-    font-family: 'Dekar', 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', 'FuturaLTCN', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
     color: white;
     margin: 0.5em;
     padding: 0.25em;
@@ -308,6 +314,7 @@ article#videoDestacado{
     margin: 2vh;
     padding: 2vh;
     text-align: center;
+    background-color: #000000;
 }
 
 article.videosNoDestacados{
@@ -323,20 +330,27 @@ iframe.otrosVideos{
 
 /*Sección "Participaciones"*/
 
-#participaciones1,
-#participaciones2{
-    height: 70vh;
+#participacionesEnDiscos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 800px;
 }
 
 /*Sección Contacto*/
 
+#botonContacto{
+    background-color: #ff8da8;
+    width: 50%;
+    font-family: 'FuturaLTCN', 'Arial', sans-serif;
+}
+
 #botonContacto:hover{
-    box-shadow: 0 12px 16px 0 rgba(44,54,133,0.24),0 17px 30px 0 rgba(44,54,133,0.19);
+    box-shadow: 0 6px 8px 0 rgba(44,54,133,0.40);
     cursor: pointer;
+    font-weight: bold;
 }
 
 main{
@@ -345,7 +359,29 @@ main{
 
 form{
     text-align: center;
-    font-family: 'Dekar', 'FuturaLTCN', 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
+    font-family: 'FuturaLTCN', 'Arial', sans-serif;
+    font-size: 16px;
     color: white;
+    margin: auto;
+    padding: 10px 25px 100px;
+    width: 50%;
+}
+
+label{
+    margin: 20px;
+    padding: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+textarea{
+    height: 200px;
 }
