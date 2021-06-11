@@ -128,7 +128,7 @@ footer{
     align-items: center;
     margin: 1em 0 0 0;
     padding: 1em 0 1em 0;
-    height: 5%;
+    height: 5vh;
     background-color: rgba(0,0,0,0.40);
 }
 
@@ -146,25 +146,28 @@ footer{
     align-items: center;
 }*/
 
-nav{
+header{
     position: relative;
     top: 0;
     font-family: 'FuturaMDCN', sans-serif;
     color: white;
+    height: 13vh;
+    margin: auto;
+    padding: auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    /*margin: 2vh 2vw;
-    padding: 2vh 2vw;*/
-    height: 5%;
+    justify-content: center;
+    width: 100%;
     background-color: rgba(0,0,0,0.40);
 }
 
 ul{
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: auto;
 }
 
 nav ul li{
@@ -195,13 +198,35 @@ a:active{
     font-weight: bold;
 }
 
-/*Sección "Discos"*/
+/*Sección "Música"*/
 
 .discos{
     height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+}
+
+figure.elementoDiscoTapa{
+    margin: 1em;
+    padding: 1em;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+figure.elementoDiscoSpotify{
+    margin: 1em;
+    padding: 1em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+article.cadaDisco{
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -239,12 +264,14 @@ article#textoBioUno{
     position: absolute;
     width: 50%;
     left: 0;
+    padding-bottom: 5vh;
 }
 
 article#textoBioDos{
     position: absolute;
     width: 50%;
     right: 0;
+    padding-bottom: 5vh;
 }
 
 p#circuloUno{
@@ -263,6 +290,7 @@ p#circuloDos{
     width: 29%;
     text-align: left;
     padding-left: 3%;
+    overflow: hidden;
 }
 
 p#circuloTres{
@@ -384,4 +412,116 @@ input, textarea{
 
 textarea{
     height: 200px;
+}
+
+@media (max-width: 768px){
+    body#bodyInicio{
+        background: url("../C-Munteanu/img/fondo_inicio_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyContacto{
+        background: url("../C-Munteanu/img/fondo_contacto_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyBio{
+        background: url("../C-Munteanu/img/fondo_bio_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyVideos{
+        background: url("../C-Munteanu/img/fondo_videos_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyParticipaciones{
+        background: url("../C-Munteanu/img/fondo_participaciones_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyVivo{
+        background: url("../C-Munteanu/img/fondo_vivo_mq.jpg") no-repeat center fixed;     
+    }
+    body#bodyMusica{
+        background: url("../C-Munteanu/img/fondo_musica_mq.jpg") no-repeat center fixed;     
+    }
+    article#textoBioUno{
+        position: static;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+    article#textoBioDos{
+        position: static;
+        width: 100%;
+    }
+    
+    p#circuloUno{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    p#circuloUnoYMedio{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    p#circuloDos{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    p#circuloTres{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    p#circuloCuatro{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    p#circuloCinco{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    p#circuloSeis{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; 
+    }
+
+    .discos{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+    
+    img.tapaDisco{
+        width: 250px;
+        height: auto;
+    }
+
+    article.cadaDisco{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    figure.elementoDiscoTapa{
+        margin-right: 1em;
+        padding-right: 1em;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    figure.elementoDiscoSpotify{
+        margin-left: 1em;
+        padding-left: 1em;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    /*header{
+        display: none;
+    }*/
+
 }
