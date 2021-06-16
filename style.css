@@ -158,6 +158,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: rgba(0,0,0,0.70);
 }
 
 ul{
@@ -167,7 +168,6 @@ ul{
     align-items: center;
     margin: auto;
     padding: auto;
-    background-color: rgba(0,0,0,0.70);
 }
 
 nav ul li{
@@ -364,7 +364,19 @@ iframe.otrosVideos{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 0 800px;
+    padding: 0 0 10vh;
+}
+
+article#losIncendiosForestales,
+article#fuegaCaminaConmigo,
+article#participacionesBandcamp{
+    margin: 2vh;
+    padding: 2vh;
+}
+
+article#participacionesBandcamp{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*Sección Contacto*/
@@ -452,53 +464,63 @@ textarea{
     article#textoBioUno{
         position: static;
         width: 100%;
+        padding: 1em;
         padding-bottom: 0;
     }
     
     article#textoBioDos{
         position: static;
         width: 100%;
+        padding: 1em;
+        padding-bottom: 10vh;
     }
     
     p#circuloUno{
         width: 100%;
-        padding-left: 0;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloUnoYMedio{
         width: 100%;
-        padding-left: 0;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloDos{
         width: 100%;
-        padding-left: 0;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloTres{
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloCuatro{
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloCinco{
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.25em;
         text-align: center;
     }
     
     p#circuloSeis{
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0.25em;
         text-align: center; 
     }
 
@@ -533,17 +555,16 @@ textarea{
         padding-top: 0;
     }
 
+    header{
+        background: transparent;
+    }
+
     ul#mainMenu{
         display: none;
     }
 
     header{
         justify-content: flex-end;
-    }
-
-    #burger-menu-toggler{
-        display: block;
-        z-index: 2;
     }
 
     #close-mobile-menu{
@@ -572,7 +593,67 @@ textarea{
         left: 0;
         height: 100vh;
         width: 100vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         z-index: 1;
         background-color: rgba(0,0,0,0.80);
+    }
+
+    #burger-menu-toggler{
+        display: block;
+        z-index: 2;
+    }
+
+    article#videoDestacado{
+        width: 100vw;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        background-color: #000000;
+    }
+
+    iframe.videoDestacado{
+        width: 80vw;
+        height: 70vh;
+    }
+
+    article.videosNoDestacados{
+        width: 100vw;
+        height: auto;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+
+    iframe.otrosVideos{
+        margin: 0;
+        margin-top: 10vh;
+        padding: 0;
+        width: 80vw;
+        height: 70vh
+    }
+
+    #participacionesEnDiscos{
+        flex-direction: column;
+    }
+    
+    article#losIncendiosForestales,
+    article#fuegaCaminaConmigo,
+    article#participacionesBandcamp{
+        margin: 2vh;
+        padding: 2vh;
+    }
+    
+    article#participacionesBandcamp{
+        flex-direction: column;
+    }
+
+    iframe.participacionesBandcamp{
+        margin-bottom: 5vh;
+    }
+
+    form{
+        width: 100%;
     }
 }
