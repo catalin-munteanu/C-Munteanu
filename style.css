@@ -129,7 +129,7 @@ footer{
     margin: 1em 0 0 0;
     padding: 1em 0 1em 0;
     height: 5vh;
-    background-color: rgba(0,0,0,0.40);
+    background-color: rgba(0,0,0,0.70);
 }
 
 .iconosFooter{
@@ -158,7 +158,6 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgba(0,0,0,0.40);
 }
 
 ul{
@@ -168,6 +167,7 @@ ul{
     align-items: center;
     margin: auto;
     padding: auto;
+    background-color: rgba(0,0,0,0.70);
 }
 
 nav ul li{
@@ -414,6 +414,19 @@ textarea{
     height: 200px;
 }
 
+#burger-menu-toggler {
+    display: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #ff8da8;
+    font-size: 20px;
+    margin-right: 10vw;
+    text-align: right;
+    z-index: 2;
+}
+
 @media (max-width: 768px){
     body#bodyInicio{
         background: url("../C-Munteanu/img/fondo_inicio_mq.jpg") no-repeat center fixed;     
@@ -520,8 +533,46 @@ textarea{
         padding-top: 0;
     }
 
-    /*header{
+    ul#mainMenu{
         display: none;
-    }*/
+    }
 
+    header{
+        justify-content: flex-end;
+    }
+
+    #burger-menu-toggler{
+        display: block;
+        z-index: 2;
+    }
+
+    #close-mobile-menu{
+        display: none;
+    }
+
+    body.mobile-menu-active{
+        overflow: hidden;
+    }
+
+    body.mobile-menu-active #open-mobile-menu{
+        display: none;
+    }
+
+    body.mobile-menu-active #close-mobile-menu{
+        display: block;
+    }
+
+    body.mobile-menu-active #mainMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.80);
+    }
 }
